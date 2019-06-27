@@ -3,20 +3,18 @@ require 'pry'
 # Module 1 - Day 4 Algorithm
 
 # 1. Build a method that accepts one argument - a string
-# 2. This method should return a string in reverse order
-# 3. Do not use Ruby's '.reverse' helper method
-# 4. I would suggest using IRB in the terminal to test code
+# 2. This method should return the count of all spaces 
+# 3. I would suggest using IRB in the terminal to test code
 
-def reverse_string(string)
-    reverse = []
-    split_string = string.split("")
-    x = split_string.length
-    x.times do 
-        reverse.push(split_string.pop)
-    end
-    puts reverse.join
+def count_spaces(string)
+    split = string.split(" ")
+    spaces = split.length - 1
+    puts spaces
 end
 
-reverse_string("hello")
-reverse_string("cadence")
-reverse_string("mountain dew")
+count_spaces("hello how are you")
+# 3
+count_spaces("spirit fingers are the best")
+# 4
+count_spaces("mountainDew")
+# 0
