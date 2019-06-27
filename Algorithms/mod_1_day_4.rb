@@ -7,9 +7,17 @@ require 'pry'
 # 3. I would suggest using IRB in the terminal to test code
 
 def count_spaces(string)
-    split = string.split(" ")
-    spaces = split.length - 1
-    puts spaces
+    count = 0
+    last = string.length
+    if string[0] == " "
+        count +=1
+    elsif string[last-1] == " "
+        count +=1
+    else
+        split = string.split(" ")
+        count += split.length - 1
+    end
+    puts count
 end
 
 count_spaces("hello how are you")
@@ -18,3 +26,7 @@ count_spaces("spirit fingers are the best")
 # 4
 count_spaces("mountainDew")
 # 0
+count_spaces(" mountainDew")
+# 1
+count_spaces("mountainDew ")
+# 1
