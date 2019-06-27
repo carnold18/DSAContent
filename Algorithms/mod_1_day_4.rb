@@ -1,9 +1,9 @@
 require 'pry'
 
-# Module 1 - Day 4 Algorithm
+# Module 1 - Week 1, Day 4 Algorithm
 
 # 1. Build a method that accepts one argument - a string
-# 2. This method should return the count of all spaces 
+# 2. This method should puts the count of all spaces 
 # 3. I would suggest using IRB in the terminal to test code
 
 def count_spaces(string)
